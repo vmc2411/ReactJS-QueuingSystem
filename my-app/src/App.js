@@ -8,6 +8,7 @@ import DashboardPage from "./components/views/DashboardPage";
 import DevicePage from "./components/views/DevicePage";
 import ManageDevicePage from "./components/views/ManageDevicePage";
 import DeviceDetailPage from "./components/views/DeviceDetailPage";
+import NumberPage from "./components/views/NumberPage";
 function App() {
   return (
     <div className="app">
@@ -21,6 +22,7 @@ function App() {
           <Route path="/device" element={<DevicePage />} />
           <Route path="/device/manage" element={<ManageDevicePage />} />
           <Route path="/device/detail" element={<DeviceDetailPage />} />
+          <Route path="/number" element={<NumberPage />} />
         </Routes>
       </div>
     </div>

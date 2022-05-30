@@ -11,6 +11,11 @@ import DeviceDetailPage from "./components/views/DeviceDetailPage";
 import NumberPage from "./components/views/NumberPage";
 import ServicePage from "./components/views/ServicePage";
 import ServiceDetailPage from "./components/views/ServiceDetailPage";
+import SettingPage from "./components/views/SettingPage";
+import AddRolePage from "./components/views/AddRolePage";
+import ManageUserPage from "./components/views/ManageUserPage";
+import AddUserPage from "./components/views/AddUserPage";
+import HistoryUserPage from "./components/views/HistoryUserPage";
 function App() {
   return (
     <div className="app">
@@ -27,6 +32,11 @@ function App() {
           <Route path="/number" element={<NumberPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/service/detail" element={<ServiceDetailPage />} />
+          <Route path="/manage-role" element={<SettingPage />} />
+          <Route path="/add/manage-role" element={<AddRolePage />} />
+          <Route path="/manage-user" element={<ManageUserPage />} />
+          <Route path="/add/manage-user" element={<AddUserPage />} />
+          <Route path="/history" element={<HistoryUserPage />} />
         </Routes>
       </div>
     </div>

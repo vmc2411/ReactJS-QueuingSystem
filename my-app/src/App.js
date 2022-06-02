@@ -9,6 +9,7 @@ import DevicePage from "./components/views/DevicePage";
 import ManageDevicePage from "./components/views/ManageDevicePage";
 import DeviceDetailPage from "./components/views/DeviceDetailPage";
 import NumberPage from "./components/views/NumberPage";
+import ReportPage from "./components/views/ReportPage";
 import ServicePage from "./components/views/ServicePage";
 import ServiceDetailPage from "./components/views/ServiceDetailPage";
 import SettingPage from "./components/views/SettingPage";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/device/manage" element={<ManageDevicePage />} />
           <Route path="/device/detail" element={<DeviceDetailPage />} />
           <Route path="/number" element={<NumberPage />} />
+          <Route path="/report" element={<ReportPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/service/detail" element={<ServiceDetailPage />} />
           <Route path="/manage-role" element={<SettingPage />} />

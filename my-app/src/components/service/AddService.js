@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 const AddService = () => {
   return (
     <>
@@ -70,7 +71,12 @@ const AddService = () => {
             </div>
           </div>
           <div className="function">
-            <button className="btn-cancel">Hủy bỏ</button>
+          <NavLink          
+            to="/service">  
+            <button className="btn-cancel">                   
+            Hủy bỏ 
+         </button>
+         </NavLink>
             <button className="btn">Thêm dịch vụ</button>
           </div>
         </div>

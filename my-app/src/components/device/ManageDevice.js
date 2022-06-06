@@ -1,4 +1,5 @@
 import icondropdown from "../../assets/images/icondropdown.png";
+import { Link, NavLink } from "react-router-dom";
 const ManageDevice = () => {
   return (
     <>
@@ -66,7 +67,13 @@ const ManageDevice = () => {
             </div>
           </div>
           <div className="function">
-            <button className="btn-cancel">Hủy bỏ</button>
+          <NavLink          
+            to="/device">  
+            <button className="btn-cancel">                   
+            Hủy bỏ 
+         </button>
+         </NavLink>
+
             <button className="btn">Thêm thiết bị</button>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import imgnotify from "../../assets/images/iconnotify.png";
 import imguser from "../../assets/images/iconuser.png";
 import { RightOutlined } from "@ant-design/icons";
-const HeaderNumber = () => {
+const HeaderNumberDetail = () => {
   return (
     <>
       <section className="headerdashboard" id="headerdashboard">
@@ -15,7 +15,15 @@ const HeaderNumber = () => {
                 padding: "0 1rem",
               }}
             />
-            <span style={{ color: "#ff9138" }}>Danh sách cấp số</span>
+            <span style={{ color: "#7e7d88" }}>Danh sách cấp số</span>
+            <RightOutlined
+              style={{
+                color: "#d4d4d7",
+                fontSize: "1.4rem",
+                padding: "0 1rem",
+              }}
+            />
+            <span style={{ color: "#ff9138" }}>Chi tiết</span>
           </h2>
         </div>
         <div className="headerdashboard-content">
@@ -33,4 +41,4 @@ const HeaderNumber = () => {
   );
 };
 
-export default HeaderNumber;
+export default HeaderNumberDetail;

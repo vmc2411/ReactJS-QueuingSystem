@@ -1,4 +1,5 @@
 import icondropdown from "../../../assets/images/icondropdown.png";
+import { Link, NavLink } from "react-router-dom";
 const AddUser = () => {
   return (
     <>
@@ -83,7 +84,12 @@ const AddUser = () => {
             </div>
           </div>
           <div className="function">
-            <button className="btn-cancel">Hủy bỏ</button>
+          <NavLink          
+            to="/manage-user">  
+            <button className="btn-cancel">                   
+            Hủy bỏ 
+         </button>
+         </NavLink>
             <button className="btn">Thêm</button>
           </div>
         </div>

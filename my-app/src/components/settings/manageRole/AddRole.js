@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 const AddRole = () => {
   return (
     <>
@@ -103,7 +104,12 @@ const AddRole = () => {
             </div>
           </div>
           <div className="function">
-            <button className="btn-cancel">Hủy bỏ</button>
+          <NavLink          
+            to="/manage-role">  
+            <button className="btn-cancel">                   
+            Hủy bỏ 
+         </button>
+         </NavLink>
             <button className="btn">Thêm</button>
           </div>
         </div>

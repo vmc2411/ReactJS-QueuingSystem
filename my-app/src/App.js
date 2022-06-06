@@ -8,12 +8,15 @@ import DashboardPage from "./components/views/DashboardPage";
 import DevicePage from "./components/views/DevicePage";
 import ManageDevicePage from "./components/views/ManageDevicePage";
 import DeviceDetailPage from "./components/views/DeviceDetailPage";
-import NumberPage from "./components/views/NumberPage";
-import ReportPage from "./components/views/ReportPage";
 import ServicePage from "./components/views/ServicePage";
 import ServiceDetailPage from "./components/views/ServiceDetailPage";
+import NumberPage from "./components/views/NumberPage";
+import AddNewNumberPage from "./components/views/AddNewNumberPage";
+import NumberDetailPage from "./components/views/NumberDetailPage";
+import ReportPage from "./components/views/ReportPage";
 import SettingPage from "./components/views/SettingPage";
 import AddRolePage from "./components/views/AddRolePage";
+import AddServicePage from "./components/views/AddServicePage";
 import ManageUserPage from "./components/views/ManageUserPage";
 import AddUserPage from "./components/views/AddUserPage";
 import HistoryUserPage from "./components/views/HistoryUserPage";
@@ -30,10 +33,13 @@ function App() {
           <Route path="/device" element={<DevicePage />} />
           <Route path="/device/manage" element={<ManageDevicePage />} />
           <Route path="/device/detail" element={<DeviceDetailPage />} />
-          <Route path="/number" element={<NumberPage />} />
-          <Route path="/report" element={<ReportPage />} />
           <Route path="/service" element={<ServicePage />} />
+          <Route path="/add/service" element={<AddServicePage />} />
           <Route path="/service/detail" element={<ServiceDetailPage />} />
+          <Route path="/number" element={<NumberPage />} />
+          <Route path="/add/number" element={<AddNewNumberPage />} />
+          <Route path="/number/detail" element={<NumberDetailPage />} />
+          <Route path="/report" element={<ReportPage />} />
           <Route path="/manage-role" element={<SettingPage />} />
           <Route path="/add/manage-role" element={<AddRolePage />} />
           <Route path="/manage-user" element={<ManageUserPage />} />

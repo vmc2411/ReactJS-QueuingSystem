@@ -1,5 +1,5 @@
 import icondropdown from "../../assets/images/icondropdown.png";
-
+import { Link, NavLink } from "react-router-dom";
 const AddNewNumber = () => {
   return (
     <>
@@ -20,7 +20,12 @@ const AddNewNumber = () => {
               </div>
             </div>
             <div className="function">
-              <button className="btn-cancel">Hủy bỏ</button>
+              <NavLink
+                to="/number">
+                <button className="btn-cancel">
+                  Hủy bỏ
+                </button>
+              </NavLink>
               <button className="btn">In số</button>
             </div>
           </div>

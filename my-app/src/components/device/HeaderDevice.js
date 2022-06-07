@@ -6,7 +6,7 @@ const HeaderDevice = () => {
     <>
       <section className="headerdashboard" id="headerdashboard">
         <div className="headerdashboard-main">
-          <h2>
+          <h2 style={{ color: "#7e7d88" }}>
             Thiết bị
             <RightOutlined
               style={{
@@ -15,7 +15,7 @@ const HeaderDevice = () => {
                 padding: "0 1rem",
               }}
             />
-            <span>Danh sách thiết bị</span>
+            <span style={{ color: "#ff9138" }}>Danh sách thiết bị</span>
           </h2>
         </div>
         <div className="headerdashboard-content">
